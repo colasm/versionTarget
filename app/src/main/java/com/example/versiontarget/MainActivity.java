@@ -89,9 +89,9 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Appelé sur retour d'activation du BT
-     * @param requestCode
-     * @param resultCode
-     * @param data
+     * @param requestCode : code de retour
+     * @param resultCode : résultat du retour
+     * @param data : données supplémentaires échangées
      */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -103,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, getString(R.string.alert_bluetooth_inactiv), Toast.LENGTH_SHORT).show();
                 finish();
             }
-            return;
         }
     }
 
